@@ -1,3 +1,5 @@
+import 'package:aoun_project/accountpage.dart';
+import 'package:aoun_project/checklistpage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,21 +12,52 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int selectedindex = 1;
 
-  List<Widget> listwidget = [
-    Text("1"),
+  final List<Widget> pages = [
+  accountpage(),
+
     
-   Center(
-  child: Padding(
-    padding: EdgeInsets.only(top: 100), 
-    child: 
-        YourCustomScrollView())),
-    Text("3"),
+        YourCustomScrollView(),
+
+    Checklistpage(), // Placeholder for the third page
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromARGB(255, 85, 72, 158),
+        selectedItemColor: Colors.white,
+        iconSize: 40,
+        currentIndex: selectedindex,
+        onTap: (value) {
+          setState(() {
+            selectedindex = value;
+            print(value);
+          });
+        },
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Account"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.list), label: "Checklist")
+        ],
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+      ),
+
+
+      body: pages[selectedindex],
+    );
+  }
+}
+
+
+class YourCustomScrollView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return
+    Scaffold(
+    appBar: AppBar(
         title: const Align(
           alignment: Alignment.topRight,
           child: Text(
@@ -44,45 +77,16 @@ class _HomePageState extends State<HomePage> {
         shadowColor: Colors.grey,
         elevation: 5,
         toolbarHeight: 80,
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromARGB(255, 85, 72, 158),
-        selectedItemColor: Colors.white,
-        iconSize: 40,
-        currentIndex: selectedindex,
-        onTap: (value) {
-          setState(() {
-            selectedindex = value;
-            print(value);
-          });
-        },
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "account"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: "checklist")
-        ],
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-      ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Expanded(
-              child: listwidget.elementAt(selectedindex),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+      ), 
+      body:
 
-class YourCustomScrollView extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.bottomLeft,
-      child: CustomScrollView(
+      Center(
+  child: Padding(
+    padding: EdgeInsets.only(top: 100), // Adjust top padding as needed
+    child: 
+    
+      //alignment: Alignment.bottomLeft,
+       CustomScrollView(
         primary: false,
         slivers: <Widget>[
           SliverPadding(
@@ -100,8 +104,8 @@ class YourCustomScrollView extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
+  )),
+    ));
   }
 
   Widget _buildContainer(IconData icon, String text, Color color) {
