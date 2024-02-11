@@ -25,6 +25,7 @@ class _MyAppState extends State<MyApp> {
 
 //account page    
   Text("1"), 
+  
 //home page
   Center(
   child: Padding(
