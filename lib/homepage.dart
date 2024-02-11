@@ -12,7 +12,12 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget> listwidget = [
     Text("1"),
-    YourCustomScrollView(),
+    
+   Center(
+  child: Padding(
+    padding: EdgeInsets.only(top: 100), 
+    child: 
+        YourCustomScrollView())),
     Text("3"),
   ];
 
