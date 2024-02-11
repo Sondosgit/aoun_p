@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
         ),
         shadowColor: Colors.grey,
         elevation: 5,
-        toolbarHeight: 60,
+        toolbarHeight: 80,
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color.fromARGB(255, 85, 72, 158),
