@@ -16,9 +16,9 @@ class _HomePageState extends State<HomePage> {
   accountpage(),
 
     
-        YourCustomScrollView(),
+  homeView(),
 
-    Checklistpage(), // Placeholder for the third page
+    Checklistpage(), 
   ];
 
   @override
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 
-class YourCustomScrollView extends StatelessWidget {
+class homeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return
