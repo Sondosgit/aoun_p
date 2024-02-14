@@ -1,45 +1,36 @@
 import 'package:flutter/material.dart';
 
-
-void main() {
-  runApp(P());
-}
-
-
-class P extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:Checklist(),
-    );
-  }
-}
-
 class Checklist extends StatefulWidget {
-  const Checklist({super.key});
+  const Checklist({Key? key}) : super(key: key);
 
   @override
-  State<Checklist> createState() => _MYState();
-}
-
-class _MYState extends State<Checklist> {
+ 
+class _ChecklistState extends State<Checklist> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          elevation: 10,
-          title:
-              Text('           ..مرحبا محمد', style: TextStyle(fontSize: 40)),
-          centerTitle: true,
-          leading: IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.settings,
-                size: 33,
-                color: Color.fromARGB(255, 100, 44, 126),
-              )),
+        title: const Align(
+          alignment: Alignment.topRight,
+          child: Text(
+            "مرحبا أحمد",
+            textAlign: TextAlign.right,
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 35,
+            ),
+          ),
         ),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.settings),
+          iconSize: 33,
+        ),
+        shadowColor: Colors.grey,
+        elevation: 5,
+        toolbarHeight: 80,
+      ), 
         body: Center(
             child: Column(
               children: [
