@@ -21,9 +21,9 @@ class Onbording extends StatelessWidget {
                     ),
                   ),
                   Image.asset("img/elderly.jpg"),
-                  //const SizedBox(height: 28),
-                  //  Image.asset("img/cargiver.jpg"),
-                  //const Text("كبير سن")
+                  const SizedBox(height: 28),
+                    Image.asset("img/cargiver.jpg"),
+                  const Text("كبير سن")
                 ],
               ),
             ),
