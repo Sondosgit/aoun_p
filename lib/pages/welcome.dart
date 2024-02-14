@@ -1,7 +1,8 @@
 
 
+import 'package:aoun_project/pages/onbording.dart';
 import 'package:flutter/material.dart';
-import 'package:aoun_p-3/pages/Onbording.dart';
+
 
 class Welcom extends StatefulWidget {
   const Welcom({Key? key}) : super(key: key);
