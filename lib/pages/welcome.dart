@@ -40,7 +40,7 @@ class _WelcomState extends State<Welcom> {
               
             ),
           ),
-          // Add more widgets or content here if needed
+         
         ],
       ),
     );
