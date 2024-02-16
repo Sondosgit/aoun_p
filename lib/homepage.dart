@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     
   homeView(),
 
-    Checklistpage(), 
+    Checklist(),
   ];
 
   @override
