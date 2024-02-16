@@ -18,9 +18,9 @@ class _HomePageState extends State<HomePage> {
     
   homeView(),
 
-    Checklistpage(), 
+    Checklist(),
   ];
-
+//
   @override
   Widget build(BuildContext context) {
     return Scaffold(

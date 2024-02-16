@@ -1,5 +1,9 @@
+import 'package:aoun_project/accountpage.dart';
+import 'package:aoun_project/checklistpage.dart';
+import 'package:aoun_project/login.dart';
 import 'package:aoun_project/pages/onbording.dart';
 import 'package:aoun_project/pages/welcome.dart';
+import 'package:aoun_project/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:aoun_project/homepage.dart';
 
@@ -14,12 +18,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const HomePage(),
-      initialRoute: "/",
-      routes: {
-        "/": (context) => const Welcom(), 
-        "/onbording": (context) => const Onbording(), 
-      },
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+      ),
+      home: const SignUp(),
     );
   }
 }
