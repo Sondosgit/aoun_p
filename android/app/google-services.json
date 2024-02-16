@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052041019709",
+    "project_id": "aoun-e8577",
+    "storage_bucket": "aoun-e8577.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052041019709:android:7b6098cb8b64c979364554",
+        "android_client_info": {
+          "package_name": "at.ghadah.aoun_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4F7A-ykZJSZtzh_VtN5Z6Hkgs9p68Ir0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
