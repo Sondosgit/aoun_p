@@ -3,6 +3,7 @@ import 'package:aoun_project/checklistpage.dart';
 import 'package:aoun_project/login.dart';
 import 'package:aoun_project/pages/onbording.dart';
 import 'package:aoun_project/pages/welcome.dart';
+import 'package:aoun_project/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:aoun_project/homepage.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
       ),
-      home: const Checklist(),
+      home: const SignUp(),
     );
   }
 }
