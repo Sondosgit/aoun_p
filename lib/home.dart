@@ -19,7 +19,7 @@ class _HomeState extends State<home> {
     {"Image": 'img/medicine.png' , "color" : Color(0xFFF1CE74) , "title" : "الأدويه" , "page" : pills()},
     {"Image": 'img/mosque.png' , "color" : Color(0xFF07D8A9) , "title" : "الصلاه" , "page" : pray()},
     {"Image": 'img/location.png' , "color" : Color(0xFF70C8DC) , "title" : "الموقع" , "page" : locations()},
-    {"Image": 'img/puzzle.png' ,  "color" : Color(0xFFBA7FF4),"title" : "التمارين" , "page" : exercise()},
+    {"Image": 'img/puzzle.png' ,  "color" : Color.fromARGB(255, 127, 207, 244),"title" : "التمارين" , "page" : exercise()},
     
   ];
   @override
