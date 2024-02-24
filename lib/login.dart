@@ -1,5 +1,6 @@
 import 'package:aoun_project/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:aoun_project/home.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -173,7 +174,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 alignment: Alignment.center,
                 child: MaterialButton(
                   onPressed: () {
-                    // Add your login logic here
+                    Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const home();
+                  }));
                   },
                   color: Colors.indigo,
                   textColor: Colors.white,
