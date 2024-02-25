@@ -41,8 +41,8 @@ class _EditState extends State<Edit> {
                 decoration: InputDecoration(
                   hintText: "محمد",
                   hintStyle: TextStyle(fontSize: 26 ,color: Color(0xFFA6A6A6) ,fontWeight: FontWeight.w100),
-                  suffixIcon: Icon(Icons.edit),
-                  suffixIconColor: Color(0xFF4C4D7B),
+                  prefixIcon: Icon(Icons.edit),
+                  prefixIconColor: Color(0xFF4C4D7B),
                   border: OutlineInputBorder(
                     borderSide:const BorderSide(
                       color:Color(0xFFA6A6A6),
@@ -66,8 +66,8 @@ class _EditState extends State<Edit> {
                 decoration: InputDecoration(
                   hintText: "moh@gmail.com",
                   hintStyle: TextStyle(fontSize: 26 ,color: Color(0xFFA6A6A6) ,fontWeight: FontWeight.w100),
-                  suffixIcon: Icon(Icons.edit),
-                  suffixIconColor: Color(0xFF4C4D7B),
+                  prefixIcon: Icon(Icons.edit),
+                  prefixIconColor: Color(0xFF4C4D7B),
                   border: OutlineInputBorder(
                     borderSide:const BorderSide(
                       color:Color(0xFFA6A6A6),
@@ -91,8 +91,8 @@ class _EditState extends State<Edit> {
                 decoration: InputDecoration(
                   hintText: "*******",
                   hintStyle: TextStyle(fontSize: 26,color: Color(0xFFA6A6A6) ,fontWeight: FontWeight.w100),
-                  suffixIcon: Icon(Icons.edit),
-                  suffixIconColor: Color(0xFF4C4D7B),
+                  prefixIcon: Icon(Icons.edit),
+                  prefixIconColor: Color(0xFF4C4D7B),
                   border: OutlineInputBorder(
                     borderSide:const BorderSide(
                       color:Color(0xFFA6A6A6),
