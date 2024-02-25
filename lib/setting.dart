@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:aoun_project/edit.dart';
 
+
 class settingg extends StatefulWidget {
   
  const settingg ({super.key });
@@ -48,20 +49,23 @@ class _settingState extends State<settingg> {
             style: ElevatedButton.styleFrom(
                 primary: Colors.white, ),
             child: const Row(
-               
+               mainAxisAlignment: MainAxisAlignment.end,
+               mainAxisSize: MainAxisSize.min,
                children: [
-                Icon(Icons.person,
-                size: 40.0,
-                color: Colors.black,),
-               Text('تعديل الملف الشخصي' , style: TextStyle(color: Colors.black , fontSize:30 ),), // <-- Text
+               Text('تعديل الملف الشخصي' ,textAlign:TextAlign.right , style: TextStyle(color: Colors.black , fontSize:30 ),), // <-- Text
                SizedBox( width: 4,),
-               ],),)
+               Icon(Icons.person,
+                size: 40.0,
+                color: Colors.black,),],),)
           ],),),
           ),
           Expanded(
             flex: 1,
             
             child: Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisSize: MainAxisSize.min,
             children: [TextButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
@@ -70,12 +74,11 @@ class _settingState extends State<settingg> {
                mainAxisAlignment: MainAxisAlignment.end,
                mainAxisSize: MainAxisSize.min,
                children: [
-                Icon(Icons.logout_rounded,
-                size: 30.0,
-                color: Colors.black,),
                Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize:25 ),), // <-- Text
                
-               ],),)
+               Icon(Icons.logout_rounded,
+                size: 30.0,
+                color: Colors.black,),],),)
               //TextButton.icon(onPressed: (){}, label: Text("تسجيل الخروج" , ) , icon: Icon(Icons.power_settings_new_outlined), )
             ],
           ))
